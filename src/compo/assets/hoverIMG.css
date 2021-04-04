@@ -1,0 +1,57 @@
+.container123 {
+     position: relative;
+     width: 50%;
+     margin-bottom: 9em;
+     box-shadow: 0px 10px 16px #4e4e4e59;
+ }
+   
+   .image123 {
+     display: block;
+     width: 100%;
+     height: auto;
+   }
+   
+   .overlay123 {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: .5s ease;
+    
+     background-color: #ffffffa6;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .container123:hover .overlay123 {
+     opacity: 1;
+   }
+   
+   .text123 {
+     color: white;
+     font-size: 20px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     text-align: center;
+   }
+
+   .eye1icon {
+     margin: 8px;
+   }
+
+   .gh1icon {
+     margin: 8px;
+   }
+
+   .eye1icon:hover, .gh1icon:hover {
+        border-bottom: 4px solid #0112FE;
+   }

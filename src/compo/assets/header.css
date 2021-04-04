@@ -1,0 +1,56 @@
+.menuLogo {
+     width: 38px;
+     height: 36px;
+     padding-top: 20px ;
+}
+
+
+
+.headerContainer ul {
+     list-style-type: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 0;
+}
+
+.headerContainer ul li {
+     margin-left: 56px ;    
+}
+
+.headerContactBTN {
+     font-size: 18px;
+     font-weight: 700;
+     padding: 8px 24px;
+     border: 2px solid #0112FE ;
+     border-radius: 10px;
+     box-shadow: 0px 2px 16px #0112fe17;
+}
+
+
+.headerContactBTN * {
+     color: #0112FE !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+     width: 5px;
+   }
+   
+   /* Track */
+   ::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 5px grey; 
+     border-radius: 10px;
+   }
+    
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     background: #0112FE; 
+     border-radius: 50px;
+   }
+   
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     background: #01FE6D; 
+   }

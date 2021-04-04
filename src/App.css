@@ -1,0 +1,27 @@
+* {
+  color: #070707;
+}
+
+.App {
+  background-image: url('./compo/assets/imagebg.jpg');
+  height: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+#WORK {
+  border: 1px solid rgba(255, 0, 0, 0);
+}
+
+
+.projectContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 17em 0;
+}

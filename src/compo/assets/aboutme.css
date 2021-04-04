@@ -1,0 +1,77 @@
+.about_container {
+     padding: 8% 20%; 
+}
+
+.aboutme_txt {
+     margin-bottom: 128px;
+}
+
+.aboutme_txt16 {
+     font-size: 16px;
+     font-weight: 300;
+     margin-bottom: 8px;
+}
+
+.aboutme_txt32 {
+     font-size: 32px;
+     font-weight: 700;
+     margin-bottom: 64px;
+}
+
+.aboutme_txt18 {
+     font-size: 18px;
+     font-weight: 300;
+     line-height: 1.5;
+}
+
+
+.aboutme_skills {
+     display: flex;
+     justify-content: space-between;
+    
+     
+}
+
+.aboutme_skills > div {
+     
+     
+}
+
+.aboutme_skills p{
+     font-size: 18px;
+     font-weight: 300;
+     margin-bottom: 32px ;
+} 
+
+
+
+.aboutme_skills_dev div p {
+     background-color: #0112FE;
+     color: #EFEFFF;
+     border-radius: 14px;
+     padding: 4px 8px 6px 8px;
+     margin: 4px;
+     width: fit-content;
+     font-size: 14px  !important;
+}
+
+
+.aboutme_skills_des div p{
+     background-color: #FE0192;
+     color: #EFEFFF;
+     border-radius: 14px;
+     padding: 4px 8px 6px 8px;
+     margin: 4px;
+     width: fit-content;
+     font-size: 14px  !important;
+}
+
+.aboutme_skills_lang div p{
+     background-color: #01FE6D;
+     color: #070707;
+     border-radius: 14px;
+     padding: 4px 8px 6px 8px;
+     margin: 4px;
+     width: fit-content;
+     font-size: 14px  !important;
+}

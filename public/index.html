@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+    integrity="sha512-J9QfbPuFlqGD2CYVCa6zn8/7PEgZnGpM5qtFOBZgwujjDnG5w5Fjx46YzqvIh/ORstcj7luStvvIHkisQi5SKw=="
+    crossorigin="anonymous"></script>
+
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>Mimi UXUI Desinger</title>
+</head>
+
+<body>
+  <div id="root">
+  </div>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+
+<script>
+
+  $(document).ready(function () {
+
+
+    $('.menuBTN').click(function () {
+      $('.mobileMenu').addClass('mobileMenuACTIVE');
+    });
+
+    $('.xClose').click(function () {
+      $('.mobileMenu').removeClass('mobileMenuACTIVE');
+    });
+
+    $('.headerContainer ul li').click(function () {
+      setTimeout(function () {
+        $('.mobileMenu').removeClass('mobileMenuACTIVE');
+      }, 400);
+    });
+
+
+    /*
+     $('.mobileMenu').click(function () {
+       $('.mobileMenu').toggle();
+     });
+ 
+ 
+     $('.xClose').click(function () {
+       $('.mobileMenu').toggle();
+     });
+     */
+
+    // mobileMenuACTIVE
+
+
+
+
+
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: " + (e.pageY - 5) + "px; left: " + (e.pageX - 5) + "px;")
+    })
+
+    document.addEventListener('click', () => {
+      cursor.classList.add("expand");
+
+      setTimeout(() => {
+        cursor.classList.remove("expand");
+      }, 500)
+    });
+
+
+    $("#workBTN").click(function () {
+      $('html,body').animate({
+        scrollTop: $("#WORK").offset().top
+      },
+        'slow');
+    });
+
+    $(".headerContactBTN").click(function () {
+      $('html,body').animate({
+        scrollTop: $("#contactSection_Container").offset().top
+      },
+        'slow');
+    });
+
+    $("#ViewMyWorkBTN").click(function () {
+      $('html,body').animate({
+        scrollTop: $("#WORK").offset().top
+      },
+        'slow');
+    });
+
+  });
+</script>
+
+</html>

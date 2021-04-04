@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #070707;
+  cursor: url('./compo/assets/vector.svg'), auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #0112FE;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+}
+
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 0.3s forwards;
+  border: 2px solid #0112FE;
+}
+
+.showMenu {
+  display: none;
+}
+
+.hideMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8.333%;
+     
+}
+
+.xClose, .mobileMenu {
+  display: none;
+}
+
+.cs_worksec .CaseStudy1Container .CaseStudy1TEXT {
+  padding-top: 9em;
+}
+
+.cs_worksec .CaseStudy1Container {
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+@media only screen and (max-width: 1300px){
+  /*
+    text down 2px 
+    images down 40px
+    16px -> 14px
+  */
+  .headerContainer ul {
+    font-size: 14px !important;
+  } 
+
+  .headerContactBTN {
+    font-size: 14px !important;
+  }
+
+  a.menuLogo img {
+    width: 34px !important;
+  }
+
+  .text16 {
+    font-size: 14px !important;
+  }
+
+  .text32 {
+    font-size: 30px !important;
+  }
+
+  .text24 {
+    font-size: 22px !important;
+  }
+
+  .text18 {
+    font-size: 16px !important;
+  }
+
+  .ViewMyWorkBTN {
+    font-size: 16px !important;
+  }
+
+  .AboveTheFoldIMG img {
+    width: 460px !important;
+  }
+  
+  .CaseStudy1IMG img {
+    width: 450px !important;
+  }
+
+  .cs1_text32 {
+    font-size: 30px !important;
+    width: 100% !important;
+  }
+  
+  .cs1_text18 {
+    font-size: 16px !important;
+  }
+
+  .contactSec_text32 {
+    font-size: 30px !important;
+  }
+
+  .contactSec_text16 {
+    font-size: 14px !important;
+  }
+
+  .contactSec_sm img {
+    width: 45px !important;
+  }
+
+  .footer_newsletter p {
+    font-size: 14px !important;
+  }
+
+  .footer_newsletter input {
+    width: 330px !important;
+    font-size: 16px !important;
+  }
+
+  .footer_newsletter button { 
+    font-size: 14px !important;
+    padding: 0px 8px 4px 8px !important;
+  }
+
+  .footer_links {
+    font-size: 14px !important;
+  }
+
+  .footer_rights {
+    font-size: 14px !important;
+  }
+
+
+}
+
+@media only screen and (max-width: 1250px){
+  .AboveTheFoldIMG img {
+    width: 420px !important;
+  }
+
+  .CaseStudy1IMG img {
+    width: 400px !important;
+  }
+
+  .CaseStudy1TEXT {
+    padding-top: 4em !important;
+  }
+
+  .cs1_text32 {
+    width: 100% !important;
+  }
+
+  .footer_newsletter button {
+    padding: 0px 8px 4px 8px !important;
+  }
+
+  .cs1_text32 {
+    font-size: 30px !important;
+    width: 100% !important;
+  }
+
+}
+
+@media only screen and (max-width: 1190px){
+  .AboveTheFoldIMG img {
+    width: 360px !important;
+  }
+
+  .CaseStudy1IMG img {
+    width: 340px !important;
+  }
+
+  .cs1_text32 {
+    font-size: 24px !important;
+  }
+
+  .footer_rights {
+    font-size: 12px !important;
+    letter-spacing: .5px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px){
+  .CaseStudy1Container {
+    padding: 0 0.333%;
+  }
+
+  .contactSec_sm img {
+    width: 35px !important;
+  }
+
+  .AboveTheFoldTEXT {
+    padding-left: 4em;
+  }
+
+  .AboveTheFoldIMG {
+    padding-right: 4em;
+  }
+
+  .headerContainer ul li {
+    margin-left: 24px;
+  }
+
+  .headerContainer {
+    padding: 0 5.333%;
+  }
+
+  a.footer_logo img {
+    width: 45px;
+    height: auto;
+  }
+  
+}
+
+
+@media only screen and (max-width: 996px){
+  .AboveTheFoldTEXT {
+    padding-left: 0em;
+  }
+
+  .xClose {
+    display: block;
+  }
+  
+  .AboveTheFoldIMG {
+    padding-right: 0em;
+  }
+
+  .CaseStudy1Container {
+    margin: 6em 8em;
+  }
+
+  .text18 {
+    font-size: 14px !important;
+  }
+
+  .CaseStudy1Container {
+    margin: 6em 4em;
+    padding: 0%;
+  }
+
+  .hideMenu {
+    display: none;
+  }
+
+  .showMenu {
+    display: block;
+    padding-top: 16px;
+    width: 100%; 
+  }
+
+  .menuBTN {
+    width: 30px !important;
+    height: auto;
+  }
+
+  .menuLogo {
+    padding-top: unset;
+    padding: 0 !important;
+  }
+
+  .menuMobContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+  }
+  .mobileMenu {
+    display: none;
+  }
+
+  .mobileMenuACTIVE {
+    display: block;
+  }
+
+  .AboveTheFoldContainer {
+    margin: 5em 0 0 0;
+  }
+
+  .AboveTheFoldTEXT {
+    padding-left: 0 !important;
+  }
+
+  .AboveTheFoldIMG {
+    padding-right: 0 !important;
+  }
+
+  .CaseStudy1Container {
+    margin: 6em 0em !important;
+  }
+
+  .footer_links a {
+    margin: 0 24px 0 24px !important;
+  }
+
+  .headerContainer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    padding: 0;
+    background: #ffffffdb;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 95vw;
+    z-index: 2;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 20% 94%, 0% 70%, 0% 35%, 20% 6%);
+    clip-path: polygon(100% 0%, 100% 100%, 20% 94%, 0% 70%, 0% 35%, 7% 2%);
+    padding-right: 4em !important;
+  }
+
+  .xClose {
+    position: absolute;
+    right: 23px;
+    z-index: 123;
+    top: 15px;
+    font-weight: 600;
+    font-size: 32px;
+
+  }
+
+  .xClose:hover {
+    color: #0112FE;
+  }
+
+  .headerContainer ul li {
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+
+  .mobileMenu ul li a:hover {
+    color: linear-gradient(90deg, rgba(1,18,254,1) 0%, rgba(254,1,146,1) 94%);
+    background: linear-gradient(90deg, rgba(1,18,254,1) 0%, rgba(254,1,146,1) 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 20px;
+    transition: ease .3s;
+  }
+
+
+}
+
+@media only screen and (max-width: 733px){
+ 
+  .AboveTheFoldIMG img {
+    width: 275px !important;
+  }
+  .text16 {
+    font-size: 13px !important;
+  }
+  .text32 {
+    font-size: 28px !important;
+  }
+  .text24 {
+    font-size: 18px !important;
+    margin-bottom: 24px;
+  }
+  .text18 {
+    font-size: 13px !important;
+  }
+
+  .ViewMyWorkBTN {
+    font-size: 13px !important;
+  }
+
+  .text18 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+  }
+
+  .cs1_text32 {
+    font-size: 18px !important;
+  }
+
+  .cs1_text18 {
+    font-size: 14px !important;
+  }
+
+  .CaseStudy1IMG img {
+    width: 320px !important;
+  }
+
+  .contactSec_text32 {
+    font-size: 28px !important;
+  }
+
+  .contactSec_text16 {
+    font-size: 13px !important;
+  }
+
+  .footer_links {
+    font-size: 13px !important;
+  }
+
+  .footer_newsletter p {
+    font-size: 13px !important;
+  }
+
+  .footer_newsletter button {
+    height: 46px;
+    padding: 0px 8px 0 8px !important; 
+    font-size: 13px;
+  }
+
+  .footer_newsletter input {
+    border-radius: 14px 0 0 14px;
+    width: 300px;
+    font-size: 13px;
+    padding: 0px 8px 0px 16px;
+  }
+
+  .footer_rights {
+    font-size: 12px !important;
+  }
+
+  .headerContainer ul li {
+    font-size: 20px;
+  }
+
+  .CaseStudy1Container {
+    height: 70vh;
+  }
+
+}
+
+@media only screen and (max-width: 636px){
+  .AboveTheFoldIMG img {
+    width: 275px !important;
+    opacity: 40%;
+    filter: grayscale(2);
+  }
+
+  .CaseStudy1IMG img {
+    width: 292px !important;
+  }
+
+  .cs1_text18 {
+    margin-bottom: 10px;
+  }
+
+  .footer_links a {
+    margin: 0 18px 0 18px !important;
+  }
+
+  a.footer_logo img {
+    width: 40px;
+    height: auto;
+  }
+
+  .footer_newsletter button {
+    height: 43px;
+  }
+
+  .footer_newsletter button {
+    padding: 0px 8px 0 8px !important;
+  }
+
+  .AboveTheFoldTEXT {
+    z-index: 1;
+  }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+  .about_container {
+    padding: 20% 5% 5% 5% !important;
+  }
+
+  .aboutme_txt16 {
+      font-size: 14px !important;
+  }
+
+  .aboutme_skills {
+    margin-bottom: 4em !important;
+  }
+
+  .aboutme_txt {
+    margin-bottom: 4em;
+  }
+
+  .aboutme_txt32 {
+    font-size: 24px !important;
+  }
+
+  .aboutme_txt18 {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1.7 !important;
+  }
+
+  .aboutme_skills {
+    display: grid !important;
+    row-gap: 4em !important; 
+  }
+
+  .CaseStudy1IMG img {
+    width: 230px !important;
+  }
+  .CaseStudy1TEXT {
+    padding-top: 1em !important;
+  }
+  .footer_links a {
+    margin: 0 8px 0 8px !important;
+  }
+  .text18 {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    letter-spacing: .5px;
+  }
+
+  .text16 {
+    font-size: 13px !important;
+    letter-spacing: .5px;
+    font-weight: 400 !important;
+  }
+
+  .cs1_text18 {
+    font-weight: 400;
+    letter-spacing: .5px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) { 
+  .contactSec_text32 {
+    font-size: 24px !important;
+  }
+
+  
+  .headerContainer ul li {
+    font-size: 18px;
+  }
+
+  .contactSec_text16 {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  .CaseStudy1Container {
+    height: 55vh !important;
+  }
+  .CaseStudy1IMG img {
+    width: 215px !important;  
+  }
+  .cs1_text32 {
+    font-size: 16px !important;
+  }
+  .cs1_text18 {
+    font-size: 13px !important;
+  }
+  .viewCS {
+    font-size: 13px !important;
+  }
+
+  .cs1_text18 {
+    margin-bottom: 5px !important;
+  }
+
+  .cs1_text18 {
+    font-weight: 400 !important;
+    font-size: 13px !important;
+  }
+
+  .CaseStudy1Container {
+    height: 60vh !important;
+  }
+
+  .AboveTheFoldIMG img {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 440px){
+  .text18 {
+    width: unset !important;
+  }
+  
+  .AboveTheFoldContainer {
+    display: grid ;
+    grid-template-columns: 1fr !important;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: center;
+    margin: 6em 0 !important;
+    padding: 0 8.333%;
+  }
+  
+  .text18 {
+    width: 35% !important;
+    line-height: 1.8 !important;
+  }
+  
+  .CaseStudy1IMG img {
+    width: 215px !important;
+    margin: 2em auto !important;
+  }
+
+  .CaseStudy1IMG {
+    margin: 0 auto !important;
+  }
+
+  .CaseStudy1Container {
+    margin: 3em 0em 0 0em !important;
+    height: 50vh !important;
+  }
+
+  .CaseStudy1IMG img {
+    width: 180px !important;
+  }
+
+  .CaseStudy1Container {
+    height: 100vh !important;
+    grid-template-columns: 1fr !important;
+  }
+
+}
+
+
+@media only screen and (max-width: 414px){ 
+  .footer_newsletter input { 
+    padding: 0px 8px 0px 16px !important;
+    width: 300px !important;
+  }
+
+  .text32 {
+    font-size: 24px !important;
+  }
+
+  .text24 {
+    font-size: 16px !important;
+
+  }
+
+  .cs1_text32 {
+    font-size: 24px !important;
+  }
+
+  .viewCS {
+    font-size: 15px !important;
+  }
+
+  .footer_links {
+    display: grid;
+    row-gap: 16px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    font-size: 16px !important;
+  }
+  .headerContainer ul li {
+    font-size: 16px !important;
+  } 
+
+}
+
+@media only screen and (max-width: 380px){
+  .contactSec_sm img {
+    width: 30px !important;
+  }
+
+  .footer_newsletter input {
+    width: 225px !important;
+  }
+
+  .contactSection_Container {
+    height: 100vh !important;
+  }
+  
+}
