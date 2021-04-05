@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.e634794b.chunk.css",
+    "main.css": "/website/static/css/main.99669cfc.chunk.css",
     "main.js": "/website/static/js/main.d0d9dab3.chunk.js",
     "main.js.map": "/website/static/js/main.d0d9dab3.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.0ea2ef79.js",
@@ -10,7 +10,7 @@
     "static/js/3.e9e735d9.chunk.js": "/website/static/js/3.e9e735d9.chunk.js",
     "static/js/3.e9e735d9.chunk.js.map": "/website/static/js/3.e9e735d9.chunk.js.map",
     "index.html": "/website/index.html",
-    "static/css/main.e634794b.chunk.css.map": "/website/static/css/main.e634794b.chunk.css.map",
+    "static/css/main.99669cfc.chunk.css.map": "/website/static/css/main.99669cfc.chunk.css.map",
     "static/js/2.08464e80.chunk.js.LICENSE.txt": "/website/static/js/2.08464e80.chunk.js.LICENSE.txt",
     "static/media/01.a4692f4d.png": "/website/static/media/01.a4692f4d.png",
     "static/media/abovethefold.css": "/website/static/media/FOOTER BG.3d860bf6.jpg",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.0ea2ef79.js",
     "static/js/2.08464e80.chunk.js",
-    "static/css/main.e634794b.chunk.css",
+    "static/css/main.99669cfc.chunk.css",
     "static/js/main.d0d9dab3.chunk.js"
   ]
 }
