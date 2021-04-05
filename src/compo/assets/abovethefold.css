@@ -280,3 +280,9 @@ a#ViewMyWorkBTN:hover {
 }
 
 /* END Footer */
+
+@media screen and (max-width: 1920px) and (max-height: 1080px ) {
+     .AboveTheFoldContainer {
+          padding: 0px 23.333%;
+     }
+}
