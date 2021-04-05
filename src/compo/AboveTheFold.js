@@ -15,7 +15,7 @@ function AboveTheFold() {
                     <a className='ViewMyWorkBTN' id='ViewMyWorkBTN'>View my Work</a>
                </div>
                <div className='AboveTheFoldIMG' >
-                    <img width='500' height='auto' src={Myimg} alt="" />
+                    <img style='filter: grayscale(1);' width='500' height='auto' src={Myimg} alt="" />
                </div>
           </div >
      )
